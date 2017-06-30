@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Breakout Level Designer</title>
+	<meta name="keywords" content="breakout, level, design, level-design, browser">
+	<meta name="description" content="Web based Breakout level designer written in Javascript">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script src="breakoutdesigner.js"></script>
+	<link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+		<div id="main.top" class="top">
+			<nav id="main.nav">
+				<a href="../index.html">Home</a> |
+				<a href="../content.html">Games</a> |
+				<a href="breakout.html">Breakout</a> |
+			</nav>
+			<h1>Breakout Level Designer</h1>
+			Level name: <input id="main.top.name" type="text" value="level" size="10"></input>
+			<input id="main.top.button" type="button" value="Change Name"></input>
+		</div>
+		<div id="main.sidebarleft" class="leftColumn">
+			Show grid: <input id="main.sidebarleft.grid" type="checkbox"><br>
+			<!-- <fieldset>
+				<legend>Blocks</legend> -->
+				<input id="main.sidebarleft.undo" type="button" value="Undo"/>
+				<input id="main.sidebarleft.redo" type="button" value="Redo"/>
+				<div id="main.sidebarleft.panel" class="verticallyCollapsedPanel">
+					<ul id="main.sidebarleft.panel.list">
+					</ul>
+				</div><br>
+				Add block:<br>
+				<form id="main.sidebarleft.add">
+					X: <input id="main.sidebarleft.add.x" type="text" size="2" value="0"></input>
+					Y: <input id="main.sidebarleft.add.y" type="text" size="2" value="0"></input>
+					Type: <input id="main.sidebarleft.add.type" type="text" size="1" value="0"></input>
+					<input id="main.sidebarleft.add.submit" type="submit" value="Add"></input>
+				</form>
+			<!-- </fieldset> -->
+		</div>
+		<div id="main.focus" class="centerColumn">
+			<canvas id="main.focus.canvas" width=600 height=600></canvas><br>
+			<input id="main.focus.typeone" type="button" value="Block Type One"/>
+			<input id="main.focus.typetwo" type="button" value="Block Type Two"/>
+			<input id="main.focus.typethree" type="button" value="Block Type Three"/>
+			<input id="main.focus.delete" type="button" value="Delete"/><br>
+
+			<a id="main.focus.download" href="">Download Level</a><br>
+			<input id="main.focus.upload" type="file">
+			<label id="main.focus.downloadlabel" class="uploadLabel" for="main.focus.upload">Upload Level</label>
+		</div>
+		<div id="main.sidebarright" class="rightColumn">
+			<form id="main.sidebarright.form">
+				<fieldset id="main.sidebarright.form.field">
+					<legend id="main.sidebarright.form.field.legend">Variables</legend>
+						Screen Width: &nbsp;&nbsp;&nbsp;<input id="main.sidebarright.form.field.screenwidth" type="text"></input><br>
+						Screen Height: &nbsp;&nbsp;<input id="main.sidebarright.form.field.screenhieght" type="text"></input><br>
+						Block Width: &nbsp;&nbsp;&nbsp;&nbsp;<input id="main.sidebarright.form.field.blockwidth" type="text"></input><br>
+						Block Height: &nbsp;&nbsp;&nbsp;<input id="main.sidebarright.form.field.blockheight" type="text"></input><br>
+						Paddle Width: &nbsp;&nbsp;&nbsp;<input id="main.sidebarright.form.field.paddlewidth" type="text"></input><br>
+						Paddle Height: &nbsp;&nbsp;<input id="main.sidebarright.form.field.paddleheight" type="text"></input><br>
+						<br>
+						Paddle Speed: &nbsp;&nbsp;&nbsp;<input id="main.sidebarright.form.field.speed" type="text"></input><br>
+						Ball X Velocity: <input id="main.sidebarright.form.field.xv" type="text"></input><br>
+						Ball Y Velocity: <input id="main.sidebarright.form.field.yv" type="text"></input><br>
+						<input id="main.sidebarright.form.field.submit" type="submit" value="Update"></input>
+				</fieldset>
+			</form>
+		</div>
+		<div>
+	</div>
+</body>
+</html>

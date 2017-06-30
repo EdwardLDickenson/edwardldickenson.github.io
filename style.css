@@ -1,0 +1,152 @@
+/*
+	Styling should be redone to make a more consistant system which can be
+	extended to other projects. Specifically, several IDs can probably changed
+	to classes.
+*/
+
+html, body, #main{
+	height: 100%;
+}
+
+/*
+#main\.sidebarleft\.panel\.list > li{
+	list-style: none;
+	border: 1px solid grey;
+	margin-top: 2px;
+}*/
+
+div.leftColumn > div.verticallyCollapsedPanel > ul {
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+
+div.top{
+	padding: 2px;
+	text-align: center;
+}
+
+div.leftColumn{
+	width: 25%;
+	float: left;
+	clear: both;
+	font-size: 80%;
+	font-family: monospace;;
+	height: 100%;
+}
+
+div.centerColumn{
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+div.center{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+div.rightColumn{
+	width: 25%;
+	float: left;
+	padding: 0;
+    margin: 0;
+}
+
+/*Make the browser's input button invisible and style a label to match the
+rest of the site*/
+
+input[type="file"]{
+	*width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+nav{
+	text-align: center;
+	font-size: 150%;
+}
+
+input[type=button], input[type=submit]{
+	background-color: black;
+	color: white;
+	border: 1px solid #888888;
+	border-radius: 4px;
+}
+
+div.verticallyCollapsedPanel{
+	height: 50%;
+	overflow: scroll;
+	border: 1px solid #888888;
+}
+
+label.uploadLabel:hover{
+	color: white;
+	background-color: #888888;
+	cursor: pointer;
+}
+
+label.uploadLabel:moz-hover{
+	color: white;
+	background-color: #888888;
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	background-color: #000000;
+}
+
+canvas{
+  border: 1px solid #888888;
+}
+
+a:hover{
+	color: white;
+	background-color: #888888;
+}
+
+a:moz-hover{
+	text-decoration: none;
+	color: white;
+	background-color: #888888;
+}
+
+input[type=button]:hover, input[type=submit]:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid #888888;
+	border-radius: 4px;
+}
+
+fieldset{
+	font-family: monospace;
+	font-size: 80%;
+}
+
+input[type=button]:moz-hover, input[type=submit]:moz-hover{
+	background-color: white;
+	color: black;
+	border: 1px solid #888888;
+	border-radius: 4px;
+}
