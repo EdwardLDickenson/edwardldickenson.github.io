@@ -365,10 +365,11 @@ function downloadLevel(evt)
 
 	var element = document.createElement('a');
 
-	//var levelData = levelDimensions.concat(blocks);
+	//	This needs to be adjusted so that the array ha
 	var levelData = [];
 	levelData.push({"dimensions": levelDimensions});
-	levelData = levelData.concat(blocks);
+	levelData.push({"blocks": blocks});
+	//levelData = levelData.concat(blocks);
 
 	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(levelData)));
 	element.setAttribute('download', levelName + ".txt");
