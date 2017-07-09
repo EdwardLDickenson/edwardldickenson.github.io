@@ -122,53 +122,22 @@ function collisionRectWall(x, y, w, h)
 	return false;
 }
 
-//	Should give credit to:
-//	https://stackoverflow.com/questions/21089959/detecting-collision-of-rectangle-with-circle
-function collisionCircleRect(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
+function vCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
 {
-	//	Logically, this is actually checking if the ball is NOT colliding with
-	//	rectangle and return the negation of that function.
-
-	var xDist = Math.abs(circleX - rectX - rectW / 2);
-	var yDist = Math.abs(circleY - rectY - rectH / 2);
-
-	if(xDist > (rectW / 2 + circleRad) || yDist > (rectH / 2 + circleRad))
+	if(((circleX + circleRad >= rectX && circleX - circleRad <= rectX + rectW) && (circleY - circleRad <= rectY + rectH && circleY - circleRad >= rectY)) ||
+		((circleX + circleRad >= rectX && circleX - circleRad <= rectX + rectW) && (circleY + circleRad <= rectY + rectH && circleY + circleRad >= rectY)))
 	{
-		return false;
-	}
-
-	return true;
-}
-
-//	Horizontal reflection of the circle against a rectangle
-function hCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
-{
-	//	Logically, this is actually checking if the ball is NOT colliding with
-	//	rectangle and return the negation of that function.
-
-	if(!collisionCircleRect(ball.x, ball.y, ballRad, rectX, rectY, levelDimensions[2], levelDimensions[3]))
-	{
-		if(circleX + circleRad < rectX || circleX + circleRad > rectX + rectW)
-		{
-			return true;
-		}
+		return true;
 	}
 
 	return false;
 }
 
-//	Vertical reflection of the circle against a rectangle
-function vCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
+function hCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
 {
-	//	Logically, this is actually checking if the ball is NOT colliding with
-	//	rectangle and return the negation of that function.
-
-	if(!collisionCircleRect(ball.x, ball.y, ballRad, rectX, rectY, levelDimensions[2], levelDimensions[3]))
+	//if()
 	{
-		if(circleY + circleRad < rectY || circleY - circleRad > rectY + rectH)
-		{
-			return true;
-		}
+
 	}
 
 	return false;
@@ -235,23 +204,18 @@ function move()
 				levelDimensions[7] = -levelDimensions[7];
 			}
 
-			//if(vCollisionCircleRectangle(ball.y, ballRad, blocks[i].y, levelDimensions[3]))
 			if(vCollisionCircleRectangle(ball.x, ball.y, ballRad, blocks[i].x, blocks[i].y, levelDimensions[3], levelDimensions[3]))
 			{
 				levelDimensions[8] = -levelDimensions[8];
 			}
-
-			if(collisionCircleRect(ball.x, ball.y, ballRad, blocks[i].x, blocks[i].y, levelDimensions[2], levelDimensions[3]))
-			{
-			}
 		}
 
-		if(collisionCircleRect(ball.x, ball.y, ballRad, paddle.x, paddle.y, levelDimensions[2], levelDimensions[3]))
+		if(hCollisionCircleRectangle(ball.x, ball.y, ballRad, paddle.x, paddle.y, levelDimensions[2], levelDimensions[3]))
 		{
 			levelDimensions[7] = -levelDimensions[7];
 		}
 
-		if(collisionCircleRect(ball.x, ball.y, ballRad, paddle.x, paddle.y, levelDimensions[2], levelDimensions[3]))
+		if(vCollisionCircleRectangle(ball.x, ball.y, ballRad, paddle.x, paddle.y, levelDimensions[2], levelDimensions[3]))
 		{
 			levelDimensions[8] = -levelDimensions[8];
 		}
@@ -299,7 +263,7 @@ function main()
 		paddle.x = ((levelDimensions[0] / 2) - (levelDimensions[4] / 2));
 		paddle.y = levelDimensions[1] - (levelDimensions[5]);
 		ball.x = (levelDimensions[0] / 2);
-		ball.y = levelDimensions[1] - ballRad - levelDimensions[5] -2;
+		ball.y = levelDimensions[1] - ballRad - levelDimensions[5] - 2;
 
 		shouldLoadLevel = false;
 	}
