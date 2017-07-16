@@ -123,8 +123,6 @@ function collisionRectWall(x, y, w, h)
 
 function vCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
 {
-	//if(((circleX + circleRad >= rectX && circleX - circleRad <= rectX + rectW) && (circleY - circleRad <= rectY + rectH && circleY + circleRad >= rectY)) ||
-	//   ((circleX + circleRad >= rectX && circleX - circleRad <= rectX + rectW) && (circleY - circleRad <= rectY && circleY + circleRad >= rectY + rectH)))
 	if(((circleX + circleRad >= rectX && circleX - circleRad <= rectX + rectW) && (circleY - circleRad <= rectY + rectH && circleY - circleRad >= rectY)) ||
 		((circleX + circleRad >= rectX && circleX - circleRad <= rectX + rectW) && (circleY + circleRad <= rectY + rectH && circleY + circleRad >= rectY)))
 	{
@@ -136,8 +134,8 @@ function vCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, re
 
 function hCollisionCircleRectangle(circleX, circleY, circleRad, rectX, rectY, rectW, rectH)
 {
-	if(((circleY >= rectY && circleY - circleRad <= rectY + rectH) && (circleX - circleRad <= rectX + rectW && circleX + circleRad >= rectX + rectW))/* ||
-		((circleY + circleRad >= rectY && circleY - circleRad <= rectY + rectH) && (circleX + circleRad <= rectX + rectW && circleX + circleRad >= rectX))*/)
+	if(((circleY >= rectY && circleY - circleRad <= rectY + rectH) && (circleX - circleRad <= rectX + rectW && circleX + circleRad >= rectX + rectW)) ||
+		((circleY >= rectY && circleY + circleRad <= rectY - rectH) && (circleX - circleRad <= rectX + rectW && circleX + circleRad >= rectX + rectW)))
 	{
 		return true;
 	}
@@ -206,7 +204,7 @@ function move()
 				levelDimensions[7] = -levelDimensions[7];
 			}
 
-			if(vCollisionCircleRectangle(ball.x, ball.y, ballRad, blocks[i].x, blocks[i].y, levelDimensions[2], levelDimensions[3]))
+			else if(vCollisionCircleRectangle(ball.x, ball.y, ballRad, blocks[i].x, blocks[i].y, levelDimensions[2], levelDimensions[3]))
 			{
 				levelDimensions[8] = -levelDimensions[8];
 			}
@@ -265,7 +263,7 @@ function main()
 		paddle.x = ((levelDimensions[0] / 2) - (levelDimensions[4] / 2));
 		paddle.y = levelDimensions[1] - (levelDimensions[5]);
 		ball.x = (levelDimensions[0] / 2);
-		ball.y = levelDimensions[1] - ballRad - levelDimensions[5] - 2;
+		ball.y = levelDimensions[1] - ballRad - levelDimensions[5] - 1;
 
 		shouldLoadLevel = false;
 	}
