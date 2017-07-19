@@ -463,9 +463,9 @@ window.onload = function(){
 	levelDimensions.push(20);	//	blockHeight
 	levelDimensions.push(80);	//	paddleWidth
 	levelDimensions.push(20);	//	paddleHeight
-	levelDimensions.push(2);	//	paddleSpeed
+	levelDimensions.push(4);	//	paddleSpeed
 	levelDimensions.push(5);	//	ballXV
-	levelDimensions.push(6);	//	ballYV
+	levelDimensions.push(7);	//	ballYV
 
 	typeOne();
 	setLevelName();
