@@ -5,7 +5,10 @@
 */
 
 html, body, #main{
-	height: 100%;
+	/*
+		Temporary fix, there's some weirdness going on with the main height
+	*/
+	height: 96%;
 }
 
 /*
@@ -57,6 +60,10 @@ div.rightColumn{
     margin: 0;
 }
 
+div.bottom{
+
+}
+
 /*Make the browser's input button invisible and style a label to match the
 rest of the site*/
 
@@ -77,6 +84,20 @@ nav{
 input[type=button], input[type=submit]{
 	background-color: black;
 	color: white;
+	border: 1px solid #888888;
+	border-radius: 4px;
+}
+
+input[type=button]:hover, input[type=submit]:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid #888888;
+	border-radius: 4px;
+}
+
+input[type=button].selected{
+	background-color: white;
+	color: black;
 	border: 1px solid #888888;
 	border-radius: 4px;
 }
@@ -132,21 +153,7 @@ a:moz-hover{
 	background-color: #888888;
 }
 
-input[type=button]:hover, input[type=submit]:hover{
-	background-color: white;
-	color: black;
-	border: 1px solid #888888;
-	border-radius: 4px;
-}
-
 fieldset{
 	font-family: monospace;
 	font-size: 80%;
-}
-
-input[type=button]:moz-hover, input[type=submit]:moz-hover{
-	background-color: white;
-	color: black;
-	border: 1px solid #888888;
-	border-radius: 4px;
 }

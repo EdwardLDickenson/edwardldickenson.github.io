@@ -8,6 +8,7 @@ var blocks = [];
 var redoStack = [];
 
 var context;
+var mouseDownPos;
 
 function createContext()
 {
@@ -37,8 +38,7 @@ function renderRect(x, y, width, height, str)
 
 function renderType(x, y, n)
 {
-	//	The logic for these four conditions is the same, the only difference
-	//	is
+	//	These conditions can be collapsed into a bitshift command
 	if(n == 1)
 	{
 		renderRect(x, y, levelDimensions[2], levelDimensions[3], "#FF0000");
@@ -94,17 +94,11 @@ function render()
 	}
 }
 
-/*
-	Changing button color can probably be acheived by changing classes
-*/
-
 function changeButtonColor()
 {
-	//	This method is slightly inefficient since it writes and overwrites the
-	//	same button twice. But only for one button, so it's not a big deal
-	$("#main\\.focus\\.typeone").css({"color": "white", "background-color": "black"});
-	$("#main\\.focus\\.typetwo").css({"color": "white", "background-color": "black"});
-	$("#main\\.focus\\.typethree").css({"color": "white", "background-color": "black"});
+	$("#main\\.focus\\.typeone").attr("class", "");
+	$("#main\\.focus\\.typetwo").attr("class", "");
+	$("#main\\.focus\\.typethree").attr("class", "");
 }
 
 function typeOne()
@@ -113,7 +107,7 @@ function typeOne()
 	type = 1;
 
 	changeButtonColor();
-	$("#main\\.focus\\.typeone").css({"color": "black", "background-color": "white"});
+	$("#main\\.focus\\.typeone").attr("class", "selected");
 }
 
 function typeTwo()
@@ -122,7 +116,7 @@ function typeTwo()
 	type = 2;
 
 	changeButtonColor();
-	$("#main\\.focus\\.typetwo").css({"color": "black", "background-color": "white"});
+	$("#main\\.focus\\.typetwo").attr("class", "selected");
 }
 
 function typeThree()
@@ -131,7 +125,7 @@ function typeThree()
 	type = 3;
 
 	changeButtonColor();
-	$("#main\\.focus\\.typethree").css({"color": "black", "background-color": "white"});
+	$("#main\\.focus\\.typethree").attr("class", "selected");
 }
 
 function normalizePosition(x, y)
@@ -286,6 +280,8 @@ function canvasMouseDown(evt)
 	x = position.x;
 	y = position.y;
 
+	mouseDownPos = position;
+
 	if(locationFilled(x, y))
 	{
 		return;
@@ -297,6 +293,10 @@ function canvasMouseDown(evt)
 	console.log(blocks[blocks.length - 1]);
 }
 
+/*
+	Should really abstract some of this logic into a "fill position" function or similar`
+	Similarly, the array "push" function should be abstracted to check for collision as well
+*/
 function canvasMouseUp(evt)
 {
 	//console.log("Mouse up event");
@@ -315,12 +315,40 @@ function canvasMouseUp(evt)
 	x = position.x;
 	y = position.y;
 
-	/*if(locationFilled(x, y))
+	if(locationFilled(x, y))
 	{
 		return;
-	}*/
+	}
 
-	//	Not implemented yet
+	var col = mouseDownPos.x;
+	var row = mouseDownPos.y;
+
+	//	Currently the only gesture that is recognized is upper left corner to lower right.
+	//	Inequalities are intentionally OBOE.
+	while(col <= x)
+	{
+		row = mouseDownPos.y;
+		while(row < y)
+		{
+			if(!locationFilled(col, row))
+			{
+				blocks.push({"type": type, "hits": hits, "x": col, "y": row});
+				createPanelElement(blocks[blocks.length - 1]);
+				console.log(blocks[blocks.length - 1]);
+			}
+
+			row += levelDimensions[3]
+		}
+
+		if(!locationFilled(col, row))
+		{
+			blocks.push({"type": type, "hits": hits, "x": col, "y": row});
+			createPanelElement(blocks[blocks.length - 1]);
+			console.log(blocks[blocks.length - 1]);
+		}
+
+		col += levelDimensions[2];
+	}
 }
 
 //	Note that this function does not actually look at the value of the checkbox,
@@ -457,15 +485,15 @@ window.onload = function(){
 	console.log("Javascript file loaded correctly");
 	context = document.getElementById("main.focus.canvas").getContext("2d");
 
-	levelDimensions.push(600);	//	canvasWidth
-	levelDimensions.push(600);	//	canvasHeight
-	levelDimensions.push(40);	//	blockWidth
-	levelDimensions.push(20);	//	blockHeight
-	levelDimensions.push(80);	//	paddleWidth
-	levelDimensions.push(20);	//	paddleHeight
-	levelDimensions.push(4);	//	paddleSpeed
-	levelDimensions.push(5);	//	ballXV
-	levelDimensions.push(7);	//	ballYV
+	levelDimensions.push(600);	//	0 canvasWidth
+	levelDimensions.push(600);	//	1 canvasHeight
+	levelDimensions.push(40);	//	2 blockWidth
+	levelDimensions.push(20);	//	3 blockHeight
+	levelDimensions.push(80);	//	4 paddleWidth
+	levelDimensions.push(20);	//	5 paddleHeight
+	levelDimensions.push(4);	//	6 paddleSpeed
+	levelDimensions.push(5);	//	7 ballXV
+	levelDimensions.push(7);	//	8 ballYV
 
 	typeOne();
 	setLevelName();
