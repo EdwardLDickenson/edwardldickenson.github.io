@@ -457,22 +457,25 @@ function upload(evt)
 		reader.onload = function(progressEvent){
 
 		var info = JSON.parse(this.result);
+		console.log(info[1]);
 
 		var newDimensions = info[0].dimensions;
 
-		for(var i = 0; i < newDimensions; ++i)
+		for(var i = 0; i < newDimensions.length; ++i)
 		{
 			levelDimensions[i] = newDimensions[i];
 		}
 
+		console.log(info[1]["blocks"].length);
 		blocks = [];
-		for(var i = 1; i < info.length; ++i)
+		for(var i = 0; i < info[1]["blocks"].length; ++i)
 		{
+			console.log("jgfdjksg");
 			var block = {};
-			block.type = info[i].type;
-			block.hits = info[i].hits;
-			block.x = info[i].x;
-			block.y = info[i].y;
+			block.type = info[1]["blocks"][i].type;
+			block.hits = info[1]["blocks"][i].hits;
+			block.x = info[1]["blocks"][i].x;
+			block.y = info[1]["blocks"][i].y;
 
 			blocks.push(block);
 		}
