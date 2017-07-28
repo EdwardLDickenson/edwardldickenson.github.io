@@ -290,7 +290,6 @@ function canvasMouseDown(evt)
 	blocks.push({"type": type, "hits": hits, "x": x, "y": y});
 	redoStack = [];
 	createPanelElement(blocks[blocks.length - 1]);
-	console.log(blocks[blocks.length - 1]);
 }
 
 /*
@@ -321,32 +320,52 @@ function canvasMouseUp(evt)
 	}
 
 	var col = mouseDownPos.x;
-	var row = mouseDownPos.y;
+	var row;
+
+	if(col > x)
+	{
+		var tmp = col;
+		col = x;
+		x = tmp;
+	}
 
 	//	Currently the only gesture that is recognized is upper left corner to lower right.
 	//	Inequalities are intentionally OBOE.
 	while(col <= x)
 	{
 		row = mouseDownPos.y;
+
+		console.log(row + ", " + String(y) + ", " + String(mouseDownPos.y));
+
+		y = position.y;
+
+		if(row > y)
+		{
+			console.log("swap");
+			var tmp = row;
+			row = y;
+			y = tmp;
+		}
+
 		while(row < y)
 		{
 			if(!locationFilled(col, row))
 			{
 				blocks.push({"type": type, "hits": hits, "x": col, "y": row});
 				createPanelElement(blocks[blocks.length - 1]);
-				console.log(blocks[blocks.length - 1]);
 			}
 
-			row += levelDimensions[3]
+			//console.log("(" + String(col) + "<" + String(x) + ")," + "(" + String(row) + " < " + String(y) + ")");
+			row += levelDimensions[3];
 		}
 
 		if(!locationFilled(col, row))
 		{
 			blocks.push({"type": type, "hits": hits, "x": col, "y": row});
 			createPanelElement(blocks[blocks.length - 1]);
-			console.log(blocks[blocks.length - 1]);
 		}
 
+		console.log(row + ", " + String(y) + ", " + String(mouseDownPos.y));
 		col += levelDimensions[2];
 	}
 }
