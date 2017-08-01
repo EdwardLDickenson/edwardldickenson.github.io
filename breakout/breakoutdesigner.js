@@ -335,8 +335,6 @@ function canvasMouseUp(evt)
 	{
 		row = mouseDownPos.y;
 
-		console.log(row + ", " + String(y) + ", " + String(mouseDownPos.y));
-
 		y = position.y;
 
 		if(row > y)
@@ -355,7 +353,6 @@ function canvasMouseUp(evt)
 				createPanelElement(blocks[blocks.length - 1]);
 			}
 
-			//console.log("(" + String(col) + "<" + String(x) + ")," + "(" + String(row) + " < " + String(y) + ")");
 			row += levelDimensions[3];
 		}
 
@@ -365,7 +362,6 @@ function canvasMouseUp(evt)
 			createPanelElement(blocks[blocks.length - 1]);
 		}
 
-		console.log(row + ", " + String(y) + ", " + String(mouseDownPos.y));
 		col += levelDimensions[2];
 	}
 }
@@ -503,6 +499,11 @@ function upload(evt)
 	reader.readAsText(file);
 }
 
+function deleteBlock()
+{
+	console.log("Delete Block");
+}
+
 window.onload = function(){
 	console.log("Javascript file loaded correctly");
 	context = document.getElementById("main.focus.canvas").getContext("2d");
@@ -530,6 +531,7 @@ window.onload = function(){
 	$("#main\\.focus\\.typeone").click(typeOne);
 	$("#main\\.focus\\.typetwo").click(typeTwo);
 	$("#main\\.focus\\.typethree").click(typeThree);
+	$("#main\\.focus\\.delete").click(deleteBlock);
 	$("#main\\.focus\\.download").click(downloadLevel);
 	$("#main\\.focus\\.canvas").mousedown(canvasMouseDown);
 	$("#main\\.focus\\.canvas").mouseup(canvasMouseUp);

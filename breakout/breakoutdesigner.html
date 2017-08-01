@@ -9,27 +9,35 @@
 	<link href="../style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<div id="main">
+	<div id="main" class="main">
 		<header id="main.top" class="top">
 			<nav id="main.nav">
 				<a href="../index.html">Home</a> |
 				<a href="../content.html">Games</a> |
 				<a href="breakout.html">Breakout</a>
 			</nav>
+
 			<h1>Breakout Level Designer</h1>
+
 			Level name: <input id="main.top.name" type="text" value="level" size="10"></input>
 			<input id="main.top.button" type="button" value="Change Name"></input>
 		</header>
+
+		Show grid: <input id="main.sidebarleft.grid" type="checkbox"><br>
+
 		<div id="main.sidebarleft" class="leftColumn">
-			Show grid: <input id="main.sidebarleft.grid" type="checkbox"><br>
-			<!-- <fieldset>
-				<legend>Blocks</legend> -->
+			<!-- Remember to update the subsquent IDs -->
+			
+			<fieldset id="main.sidebarleft.fields">
+				<legend>Blocks</legend>
 				<input id="main.sidebarleft.undo" type="button" value="Undo"/>
-				<input id="main.sidebarleft.redo" type="button" value="Redo"/>
+				<input id="main.sidebarleft.redo" type="button" value="Redo"/><br><br>
+
 				<div id="main.sidebarleft.panel" class="verticallyCollapsedPanel">
 					<ul id="main.sidebarleft.panel.list">
 					</ul>
 				</div><br>
+
 				Add block:<br>
 				<form id="main.sidebarleft.add">
 					X: <input id="main.sidebarleft.add.x" type="text" size="2" value="0"></input>
@@ -37,19 +45,21 @@
 					Type: <input id="main.sidebarleft.add.type" type="text" size="1" value="0"></input>
 					<input id="main.sidebarleft.add.submit" type="submit" value="Add"></input>
 				</form>
-			<!-- </fieldset> -->
+			</fieldset>
 		</div>
+
 		<div id="main.focus" class="centerColumn">
 			<canvas id="main.focus.canvas" width=600 height=600></canvas><br>
 			<input id="main.focus.typeone" type="button" value="Block Type One"/>
 			<input id="main.focus.typetwo" type="button" value="Block Type Two"/>
 			<input id="main.focus.typethree" type="button" value="Block Type Three"/>
-			<input id="main.focus.delete" type="button" value="Delete"/><br>
+			<input id="main.focus.delete" type="button" value="Delete"/><br><br>
 
-			<a id="main.focus.download" href="">Download Level</a><br>
+			<a id="main.focus.download" class="downloadLink" href="">Download Level</a>
 			<input id="main.focus.upload" type="file">
 			<label id="main.focus.downloadlabel" class="uploadLabel" for="main.focus.upload">Upload Level</label>
 		</div>
+
 		<div id="main.sidebarright" class="rightColumn">
 			<form id="main.sidebarright.form">
 				<fieldset id="main.sidebarright.form.field">

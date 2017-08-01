@@ -210,6 +210,13 @@ function move()
 			}
 		}
 
+		if(blocks.length == 0)
+		{
+			shouldLoadLevel = true;
+			++levelIterator;
+			launched = false;
+		}
+
 		if(hCollisionCircleRectangle(ball.x, ball.y, ballRad, paddle.x, paddle.y, levelDimensions[4], levelDimensions[5]))
 		{
 			levelDimensions[7] = -levelDimensions[7];
@@ -225,23 +232,21 @@ function move()
 	}
 }
 
+function loadLevel(level)
+{
+
+}
+
 function main()
 {
 	render();
 	move();
 
-	/*if(blocks.length == 0 && levelIterator > 0)
-	{
-		console.log("Reload?");
-		shouldLoadLevel = true;
-		++levelIterator;
-	}*/
-
 	//	Pull information from the level array
 	if(shouldLoadLevel)
 	{
 		var level = levels[levelIterator];
-		console.log(levelIterator);
+		console.log(level);
 
 		//	Level dimensions
 		levelDimensions.push(600);
@@ -259,10 +264,10 @@ function main()
 		{
 			console.log("Loading the blocks");
 			var block = {};
-			block.type = levelOne[1].blocks[i].type;
-			block.hits = levelOne[1].blocks[i].hits;
-			block.x = levelOne[1].blocks[i].x;
-			block.y = levelOne[1].blocks[i].y;
+			block.type = levels[levelIterator][1].blocks[i].type;
+			block.hits = levels[levelIterator][1].blocks[i].hits;
+			block.x = levels[levelIterator][1].blocks[i].x;
+			block.y = levels[levelIterator][1].blocks[i].y;
 
 			blocks.push(block);
 		}
