@@ -542,5 +542,5 @@ window.onload = function(){
 
 //	TODO:
 //	Grid breaks when changing block dimensions. Screen resize not implemented
-//
+//	List elements are not appended after uploading a level
 //

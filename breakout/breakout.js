@@ -1,4 +1,6 @@
-var levelOne = [{"dimensions":[600,600,40,20,80,20,4,5,6]},{"blocks":[{"type":1,"hits":1,"x":0,"y":0},{"type":1,"hits":1,"x":0,"y":20},{"type":1,"hits":1,"x":0,"y":40},{"type":1,"hits":1,"x":0,"y":60},{"type":1,"hits":1,"x":0,"y":80},{"type":1,"hits":1,"x":0,"y":100},{"type":1,"hits":1,"x":0,"y":120},{"type":1,"hits":1,"x":0,"y":140},{"type":1,"hits":1,"x":0,"y":160},{"type":1,"hits":1,"x":0,"y":180},{"type":1,"hits":1,"x":0,"y":200},{"type":1,"hits":1,"x":0,"y":220},{"type":1,"hits":1,"x":0,"y":240},{"type":1,"hits":1,"x":0,"y":260},{"type":1,"hits":1,"x":0,"y":280},{"type":1,"hits":1,"x":0,"y":300},{"type":1,"hits":1,"x":40,"y":300},{"type":1,"hits":1,"x":40,"y":280},{"type":1,"hits":1,"x":40,"y":260},{"type":1,"hits":1,"x":40,"y":220},{"type":1,"hits":1,"x":40,"y":160},{"type":1,"hits":1,"x":40,"y":80},{"type":1,"hits":1,"x":40,"y":0},{"type":1,"hits":1,"x":40,"y":20},{"type":1,"hits":1,"x":40,"y":40},{"type":1,"hits":1,"x":40,"y":60},{"type":1,"hits":1,"x":40,"y":120},{"type":1,"hits":1,"x":40,"y":140},{"type":1,"hits":1,"x":40,"y":100},{"type":1,"hits":1,"x":40,"y":180},{"type":1,"hits":1,"x":40,"y":200},{"type":1,"hits":1,"x":40,"y":240},{"type":1,"hits":1,"x":80,"y":300},{"type":1,"hits":1,"x":80,"y":280},{"type":1,"hits":1,"x":80,"y":260},{"type":1,"hits":1,"x":80,"y":240},{"type":1,"hits":1,"x":80,"y":220},{"type":1,"hits":1,"x":80,"y":200},{"type":1,"hits":1,"x":80,"y":180},{"type":1,"hits":1,"x":80,"y":160},{"type":1,"hits":1,"x":80,"y":140},{"type":1,"hits":1,"x":80,"y":120},{"type":1,"hits":1,"x":80,"y":100},{"type":1,"hits":1,"x":80,"y":80},{"type":1,"hits":1,"x":80,"y":60},{"type":1,"hits":1,"x":80,"y":40},{"type":1,"hits":1,"x":80,"y":20},{"type":1,"hits":1,"x":80,"y":0},{"type":1,"hits":1,"x":120,"y":0},{"type":1,"hits":1,"x":120,"y":40},{"type":1,"hits":1,"x":120,"y":80},{"type":1,"hits":1,"x":120,"y":140},{"type":1,"hits":1,"x":120,"y":180},{"type":1,"hits":1,"x":120,"y":220},{"type":1,"hits":1,"x":120,"y":240},{"type":1,"hits":1,"x":120,"y":280},{"type":1,"hits":1,"x":120,"y":300},{"type":1,"hits":1,"x":120,"y":260},{"type":1,"hits":1,"x":120,"y":200},{"type":1,"hits":1,"x":120,"y":160},{"type":1,"hits":1,"x":120,"y":120},{"type":1,"hits":1,"x":120,"y":100},{"type":1,"hits":1,"x":120,"y":60},{"type":1,"hits":1,"x":120,"y":20},{"type":1,"hits":1,"x":160,"y":0},{"type":1,"hits":1,"x":160,"y":20},{"type":1,"hits":1,"x":160,"y":40},{"type":1,"hits":1,"x":160,"y":60},{"type":1,"hits":1,"x":160,"y":80},{"type":1,"hits":1,"x":160,"y":100},{"type":1,"hits":1,"x":160,"y":120},{"type":1,"hits":1,"x":160,"y":140},{"type":1,"hits":1,"x":160,"y":160},{"type":1,"hits":1,"x":160,"y":180},{"type":1,"hits":1,"x":160,"y":200},{"type":1,"hits":1,"x":160,"y":220},{"type":1,"hits":1,"x":160,"y":240},{"type":1,"hits":1,"x":160,"y":260},{"type":1,"hits":1,"x":160,"y":280},{"type":1,"hits":1,"x":160,"y":300},{"type":1,"hits":1,"x":200,"y":300},{"type":1,"hits":1,"x":200,"y":280},{"type":1,"hits":1,"x":200,"y":260},{"type":1,"hits":1,"x":200,"y":240},{"type":1,"hits":1,"x":200,"y":220},{"type":1,"hits":1,"x":200,"y":200},{"type":1,"hits":1,"x":200,"y":180},{"type":1,"hits":1,"x":200,"y":160},{"type":1,"hits":1,"x":200,"y":140},{"type":1,"hits":1,"x":200,"y":120},{"type":1,"hits":1,"x":200,"y":100},{"type":1,"hits":1,"x":200,"y":80},{"type":1,"hits":1,"x":200,"y":60},{"type":1,"hits":1,"x":200,"y":40},{"type":1,"hits":1,"x":200,"y":0},{"type":1,"hits":1,"x":200,"y":20},{"type":1,"hits":1,"x":240,"y":20},{"type":1,"hits":1,"x":240,"y":80},{"type":1,"hits":1,"x":240,"y":100},{"type":1,"hits":1,"x":240,"y":120},{"type":1,"hits":1,"x":280,"y":180},{"type":1,"hits":1,"x":280,"y":220},{"type":1,"hits":1,"x":280,"y":260},{"type":1,"hits":1,"x":240,"y":300},{"type":1,"hits":1,"x":240,"y":280},{"type":1,"hits":1,"x":240,"y":260},{"type":1,"hits":1,"x":240,"y":240},{"type":1,"hits":1,"x":240,"y":220},{"type":1,"hits":1,"x":240,"y":200},{"type":1,"hits":1,"x":240,"y":180},{"type":1,"hits":1,"x":240,"y":160},{"type":1,"hits":1,"x":240,"y":140},{"type":1,"hits":1,"x":240,"y":40},{"type":1,"hits":1,"x":240,"y":60},{"type":1,"hits":1,"x":240,"y":0},{"type":1,"hits":1,"x":280,"y":0},{"type":1,"hits":1,"x":280,"y":20},{"type":1,"hits":1,"x":280,"y":40},{"type":1,"hits":1,"x":280,"y":80},{"type":1,"hits":1,"x":280,"y":100},{"type":1,"hits":1,"x":280,"y":120},{"type":1,"hits":1,"x":280,"y":140},{"type":1,"hits":1,"x":280,"y":160},{"type":1,"hits":1,"x":280,"y":60},{"type":1,"hits":1,"x":320,"y":140},{"type":1,"hits":1,"x":280,"y":240},{"type":1,"hits":1,"x":320,"y":200},{"type":1,"hits":1,"x":280,"y":200},{"type":1,"hits":1,"x":320,"y":220},{"type":1,"hits":1,"x":320,"y":240},{"type":1,"hits":1,"x":320,"y":260},{"type":1,"hits":1,"x":320,"y":280},{"type":1,"hits":1,"x":280,"y":280},{"type":1,"hits":1,"x":320,"y":300},{"type":1,"hits":1,"x":280,"y":300},{"type":1,"hits":1,"x":320,"y":180},{"type":1,"hits":1,"x":320,"y":160},{"type":1,"hits":1,"x":320,"y":120},{"type":1,"hits":1,"x":320,"y":100},{"type":1,"hits":1,"x":320,"y":80},{"type":1,"hits":1,"x":320,"y":60},{"type":1,"hits":1,"x":320,"y":40},{"type":1,"hits":1,"x":320,"y":20},{"type":1,"hits":1,"x":320,"y":0},{"type":1,"hits":1,"x":360,"y":0},{"type":1,"hits":1,"x":360,"y":20},{"type":1,"hits":1,"x":360,"y":60},{"type":1,"hits":1,"x":360,"y":80},{"type":1,"hits":1,"x":360,"y":100},{"type":1,"hits":1,"x":360,"y":160},{"type":1,"hits":1,"x":360,"y":220},{"type":1,"hits":1,"x":360,"y":260},{"type":1,"hits":1,"x":360,"y":300},{"type":1,"hits":1,"x":360,"y":280},{"type":1,"hits":1,"x":360,"y":240},{"type":1,"hits":1,"x":360,"y":200},{"type":1,"hits":1,"x":360,"y":180},{"type":1,"hits":1,"x":360,"y":120},{"type":1,"hits":1,"x":360,"y":140},{"type":1,"hits":1,"x":360,"y":40},{"type":1,"hits":1,"x":400,"y":0},{"type":1,"hits":1,"x":400,"y":20},{"type":1,"hits":1,"x":440,"y":60},{"type":1,"hits":1,"x":440,"y":80},{"type":1,"hits":1,"x":400,"y":100},{"type":1,"hits":1,"x":400,"y":140},{"type":1,"hits":1,"x":400,"y":200},{"type":1,"hits":1,"x":400,"y":240},{"type":1,"hits":1,"x":400,"y":280},{"type":1,"hits":1,"x":400,"y":300},{"type":1,"hits":1,"x":400,"y":260},{"type":1,"hits":1,"x":400,"y":220},{"type":1,"hits":1,"x":400,"y":180},{"type":1,"hits":1,"x":400,"y":160},{"type":1,"hits":1,"x":400,"y":120},{"type":1,"hits":1,"x":400,"y":80},{"type":1,"hits":1,"x":400,"y":60},{"type":1,"hits":1,"x":400,"y":40},{"type":1,"hits":1,"x":440,"y":0},{"type":1,"hits":1,"x":440,"y":20},{"type":1,"hits":1,"x":440,"y":40},{"type":1,"hits":1,"x":440,"y":100},{"type":1,"hits":1,"x":440,"y":140},{"type":1,"hits":1,"x":440,"y":180},{"type":1,"hits":1,"x":440,"y":240},{"type":1,"hits":1,"x":440,"y":280},{"type":1,"hits":1,"x":440,"y":300},{"type":1,"hits":1,"x":440,"y":260},{"type":1,"hits":1,"x":440,"y":220},{"type":1,"hits":1,"x":440,"y":200},{"type":1,"hits":1,"x":440,"y":160},{"type":1,"hits":1,"x":440,"y":120},{"type":1,"hits":1,"x":480,"y":0},{"type":1,"hits":1,"x":520,"y":0},{"type":1,"hits":1,"x":560,"y":0},{"type":1,"hits":1,"x":560,"y":40},{"type":1,"hits":1,"x":560,"y":80},{"type":1,"hits":1,"x":520,"y":160},{"type":1,"hits":1,"x":560,"y":180},{"type":1,"hits":1,"x":560,"y":220},{"type":1,"hits":1,"x":560,"y":260},{"type":1,"hits":1,"x":560,"y":280},{"type":1,"hits":1,"x":560,"y":300},{"type":1,"hits":1,"x":480,"y":300},{"type":1,"hits":1,"x":520,"y":300},{"type":1,"hits":1,"x":520,"y":280},{"type":1,"hits":1,"x":480,"y":280},{"type":1,"hits":1,"x":480,"y":240},{"type":1,"hits":1,"x":480,"y":220},{"type":1,"hits":1,"x":480,"y":200},{"type":1,"hits":1,"x":480,"y":180},{"type":1,"hits":1,"x":480,"y":140},{"type":1,"hits":1,"x":480,"y":120},{"type":1,"hits":1,"x":480,"y":100},{"type":1,"hits":1,"x":480,"y":60},{"type":1,"hits":1,"x":480,"y":40},{"type":1,"hits":1,"x":480,"y":20},{"type":1,"hits":1,"x":560,"y":20},{"type":1,"hits":1,"x":520,"y":20},{"type":1,"hits":1,"x":520,"y":60},{"type":1,"hits":1,"x":560,"y":60},{"type":1,"hits":1,"x":520,"y":40},{"type":1,"hits":1,"x":520,"y":80},{"type":1,"hits":1,"x":480,"y":80},{"type":1,"hits":1,"x":520,"y":100},{"type":1,"hits":1,"x":560,"y":100},{"type":1,"hits":1,"x":560,"y":140},{"type":1,"hits":1,"x":520,"y":140},{"type":1,"hits":1,"x":520,"y":120},{"type":1,"hits":1,"x":560,"y":120},{"type":1,"hits":1,"x":560,"y":160},{"type":1,"hits":1,"x":520,"y":180},{"type":1,"hits":1,"x":520,"y":200},{"type":1,"hits":1,"x":560,"y":240},{"type":1,"hits":1,"x":560,"y":200},{"type":1,"hits":1,"x":520,"y":220},{"type":1,"hits":1,"x":520,"y":240},{"type":1,"hits":1,"x":520,"y":260},{"type":1,"hits":1,"x":480,"y":260},{"type":1,"hits":1,"x":480,"y":160}]}];
+//var levelOne = [{"dimensions":[600,600,40,20,80,20,4,5,6]},{"blocks":[{"type":1,"hits":1,"x":0,"y":0},{"type":1,"hits":1,"x":0,"y":20},{"type":1,"hits":1,"x":0,"y":40},{"type":1,"hits":1,"x":0,"y":60},{"type":1,"hits":1,"x":0,"y":80},{"type":1,"hits":1,"x":0,"y":100},{"type":1,"hits":1,"x":0,"y":120},{"type":1,"hits":1,"x":0,"y":140},{"type":1,"hits":1,"x":0,"y":160},{"type":1,"hits":1,"x":0,"y":180},{"type":1,"hits":1,"x":0,"y":200},{"type":1,"hits":1,"x":0,"y":220},{"type":1,"hits":1,"x":0,"y":240},{"type":1,"hits":1,"x":0,"y":260},{"type":1,"hits":1,"x":0,"y":280},{"type":1,"hits":1,"x":0,"y":300},{"type":1,"hits":1,"x":40,"y":300},{"type":1,"hits":1,"x":40,"y":280},{"type":1,"hits":1,"x":40,"y":260},{"type":1,"hits":1,"x":40,"y":220},{"type":1,"hits":1,"x":40,"y":160},{"type":1,"hits":1,"x":40,"y":80},{"type":1,"hits":1,"x":40,"y":0},{"type":1,"hits":1,"x":40,"y":20},{"type":1,"hits":1,"x":40,"y":40},{"type":1,"hits":1,"x":40,"y":60},{"type":1,"hits":1,"x":40,"y":120},{"type":1,"hits":1,"x":40,"y":140},{"type":1,"hits":1,"x":40,"y":100},{"type":1,"hits":1,"x":40,"y":180},{"type":1,"hits":1,"x":40,"y":200},{"type":1,"hits":1,"x":40,"y":240},{"type":1,"hits":1,"x":80,"y":300},{"type":1,"hits":1,"x":80,"y":280},{"type":1,"hits":1,"x":80,"y":260},{"type":1,"hits":1,"x":80,"y":240},{"type":1,"hits":1,"x":80,"y":220},{"type":1,"hits":1,"x":80,"y":200},{"type":1,"hits":1,"x":80,"y":180},{"type":1,"hits":1,"x":80,"y":160},{"type":1,"hits":1,"x":80,"y":140},{"type":1,"hits":1,"x":80,"y":120},{"type":1,"hits":1,"x":80,"y":100},{"type":1,"hits":1,"x":80,"y":80},{"type":1,"hits":1,"x":80,"y":60},{"type":1,"hits":1,"x":80,"y":40},{"type":1,"hits":1,"x":80,"y":20},{"type":1,"hits":1,"x":80,"y":0},{"type":1,"hits":1,"x":120,"y":0},{"type":1,"hits":1,"x":120,"y":40},{"type":1,"hits":1,"x":120,"y":80},{"type":1,"hits":1,"x":120,"y":140},{"type":1,"hits":1,"x":120,"y":180},{"type":1,"hits":1,"x":120,"y":220},{"type":1,"hits":1,"x":120,"y":240},{"type":1,"hits":1,"x":120,"y":280},{"type":1,"hits":1,"x":120,"y":300},{"type":1,"hits":1,"x":120,"y":260},{"type":1,"hits":1,"x":120,"y":200},{"type":1,"hits":1,"x":120,"y":160},{"type":1,"hits":1,"x":120,"y":120},{"type":1,"hits":1,"x":120,"y":100},{"type":1,"hits":1,"x":120,"y":60},{"type":1,"hits":1,"x":120,"y":20},{"type":1,"hits":1,"x":160,"y":0},{"type":1,"hits":1,"x":160,"y":20},{"type":1,"hits":1,"x":160,"y":40},{"type":1,"hits":1,"x":160,"y":60},{"type":1,"hits":1,"x":160,"y":80},{"type":1,"hits":1,"x":160,"y":100},{"type":1,"hits":1,"x":160,"y":120},{"type":1,"hits":1,"x":160,"y":140},{"type":1,"hits":1,"x":160,"y":160},{"type":1,"hits":1,"x":160,"y":180},{"type":1,"hits":1,"x":160,"y":200},{"type":1,"hits":1,"x":160,"y":220},{"type":1,"hits":1,"x":160,"y":240},{"type":1,"hits":1,"x":160,"y":260},{"type":1,"hits":1,"x":160,"y":280},{"type":1,"hits":1,"x":160,"y":300},{"type":1,"hits":1,"x":200,"y":300},{"type":1,"hits":1,"x":200,"y":280},{"type":1,"hits":1,"x":200,"y":260},{"type":1,"hits":1,"x":200,"y":240},{"type":1,"hits":1,"x":200,"y":220},{"type":1,"hits":1,"x":200,"y":200},{"type":1,"hits":1,"x":200,"y":180},{"type":1,"hits":1,"x":200,"y":160},{"type":1,"hits":1,"x":200,"y":140},{"type":1,"hits":1,"x":200,"y":120},{"type":1,"hits":1,"x":200,"y":100},{"type":1,"hits":1,"x":200,"y":80},{"type":1,"hits":1,"x":200,"y":60},{"type":1,"hits":1,"x":200,"y":40},{"type":1,"hits":1,"x":200,"y":0},{"type":1,"hits":1,"x":200,"y":20},{"type":1,"hits":1,"x":240,"y":20},{"type":1,"hits":1,"x":240,"y":80},{"type":1,"hits":1,"x":240,"y":100},{"type":1,"hits":1,"x":240,"y":120},{"type":1,"hits":1,"x":280,"y":180},{"type":1,"hits":1,"x":280,"y":220},{"type":1,"hits":1,"x":280,"y":260},{"type":1,"hits":1,"x":240,"y":300},{"type":1,"hits":1,"x":240,"y":280},{"type":1,"hits":1,"x":240,"y":260},{"type":1,"hits":1,"x":240,"y":240},{"type":1,"hits":1,"x":240,"y":220},{"type":1,"hits":1,"x":240,"y":200},{"type":1,"hits":1,"x":240,"y":180},{"type":1,"hits":1,"x":240,"y":160},{"type":1,"hits":1,"x":240,"y":140},{"type":1,"hits":1,"x":240,"y":40},{"type":1,"hits":1,"x":240,"y":60},{"type":1,"hits":1,"x":240,"y":0},{"type":1,"hits":1,"x":280,"y":0},{"type":1,"hits":1,"x":280,"y":20},{"type":1,"hits":1,"x":280,"y":40},{"type":1,"hits":1,"x":280,"y":80},{"type":1,"hits":1,"x":280,"y":100},{"type":1,"hits":1,"x":280,"y":120},{"type":1,"hits":1,"x":280,"y":140},{"type":1,"hits":1,"x":280,"y":160},{"type":1,"hits":1,"x":280,"y":60},{"type":1,"hits":1,"x":320,"y":140},{"type":1,"hits":1,"x":280,"y":240},{"type":1,"hits":1,"x":320,"y":200},{"type":1,"hits":1,"x":280,"y":200},{"type":1,"hits":1,"x":320,"y":220},{"type":1,"hits":1,"x":320,"y":240},{"type":1,"hits":1,"x":320,"y":260},{"type":1,"hits":1,"x":320,"y":280},{"type":1,"hits":1,"x":280,"y":280},{"type":1,"hits":1,"x":320,"y":300},{"type":1,"hits":1,"x":280,"y":300},{"type":1,"hits":1,"x":320,"y":180},{"type":1,"hits":1,"x":320,"y":160},{"type":1,"hits":1,"x":320,"y":120},{"type":1,"hits":1,"x":320,"y":100},{"type":1,"hits":1,"x":320,"y":80},{"type":1,"hits":1,"x":320,"y":60},{"type":1,"hits":1,"x":320,"y":40},{"type":1,"hits":1,"x":320,"y":20},{"type":1,"hits":1,"x":320,"y":0},{"type":1,"hits":1,"x":360,"y":0},{"type":1,"hits":1,"x":360,"y":20},{"type":1,"hits":1,"x":360,"y":60},{"type":1,"hits":1,"x":360,"y":80},{"type":1,"hits":1,"x":360,"y":100},{"type":1,"hits":1,"x":360,"y":160},{"type":1,"hits":1,"x":360,"y":220},{"type":1,"hits":1,"x":360,"y":260},{"type":1,"hits":1,"x":360,"y":300},{"type":1,"hits":1,"x":360,"y":280},{"type":1,"hits":1,"x":360,"y":240},{"type":1,"hits":1,"x":360,"y":200},{"type":1,"hits":1,"x":360,"y":180},{"type":1,"hits":1,"x":360,"y":120},{"type":1,"hits":1,"x":360,"y":140},{"type":1,"hits":1,"x":360,"y":40},{"type":1,"hits":1,"x":400,"y":0},{"type":1,"hits":1,"x":400,"y":20},{"type":1,"hits":1,"x":440,"y":60},{"type":1,"hits":1,"x":440,"y":80},{"type":1,"hits":1,"x":400,"y":100},{"type":1,"hits":1,"x":400,"y":140},{"type":1,"hits":1,"x":400,"y":200},{"type":1,"hits":1,"x":400,"y":240},{"type":1,"hits":1,"x":400,"y":280},{"type":1,"hits":1,"x":400,"y":300},{"type":1,"hits":1,"x":400,"y":260},{"type":1,"hits":1,"x":400,"y":220},{"type":1,"hits":1,"x":400,"y":180},{"type":1,"hits":1,"x":400,"y":160},{"type":1,"hits":1,"x":400,"y":120},{"type":1,"hits":1,"x":400,"y":80},{"type":1,"hits":1,"x":400,"y":60},{"type":1,"hits":1,"x":400,"y":40},{"type":1,"hits":1,"x":440,"y":0},{"type":1,"hits":1,"x":440,"y":20},{"type":1,"hits":1,"x":440,"y":40},{"type":1,"hits":1,"x":440,"y":100},{"type":1,"hits":1,"x":440,"y":140},{"type":1,"hits":1,"x":440,"y":180},{"type":1,"hits":1,"x":440,"y":240},{"type":1,"hits":1,"x":440,"y":280},{"type":1,"hits":1,"x":440,"y":300},{"type":1,"hits":1,"x":440,"y":260},{"type":1,"hits":1,"x":440,"y":220},{"type":1,"hits":1,"x":440,"y":200},{"type":1,"hits":1,"x":440,"y":160},{"type":1,"hits":1,"x":440,"y":120},{"type":1,"hits":1,"x":480,"y":0},{"type":1,"hits":1,"x":520,"y":0},{"type":1,"hits":1,"x":560,"y":0},{"type":1,"hits":1,"x":560,"y":40},{"type":1,"hits":1,"x":560,"y":80},{"type":1,"hits":1,"x":520,"y":160},{"type":1,"hits":1,"x":560,"y":180},{"type":1,"hits":1,"x":560,"y":220},{"type":1,"hits":1,"x":560,"y":260},{"type":1,"hits":1,"x":560,"y":280},{"type":1,"hits":1,"x":560,"y":300},{"type":1,"hits":1,"x":480,"y":300},{"type":1,"hits":1,"x":520,"y":300},{"type":1,"hits":1,"x":520,"y":280},{"type":1,"hits":1,"x":480,"y":280},{"type":1,"hits":1,"x":480,"y":240},{"type":1,"hits":1,"x":480,"y":220},{"type":1,"hits":1,"x":480,"y":200},{"type":1,"hits":1,"x":480,"y":180},{"type":1,"hits":1,"x":480,"y":140},{"type":1,"hits":1,"x":480,"y":120},{"type":1,"hits":1,"x":480,"y":100},{"type":1,"hits":1,"x":480,"y":60},{"type":1,"hits":1,"x":480,"y":40},{"type":1,"hits":1,"x":480,"y":20},{"type":1,"hits":1,"x":560,"y":20},{"type":1,"hits":1,"x":520,"y":20},{"type":1,"hits":1,"x":520,"y":60},{"type":1,"hits":1,"x":560,"y":60},{"type":1,"hits":1,"x":520,"y":40},{"type":1,"hits":1,"x":520,"y":80},{"type":1,"hits":1,"x":480,"y":80},{"type":1,"hits":1,"x":520,"y":100},{"type":1,"hits":1,"x":560,"y":100},{"type":1,"hits":1,"x":560,"y":140},{"type":1,"hits":1,"x":520,"y":140},{"type":1,"hits":1,"x":520,"y":120},{"type":1,"hits":1,"x":560,"y":120},{"type":1,"hits":1,"x":560,"y":160},{"type":1,"hits":1,"x":520,"y":180},{"type":1,"hits":1,"x":520,"y":200},{"type":1,"hits":1,"x":560,"y":240},{"type":1,"hits":1,"x":560,"y":200},{"type":1,"hits":1,"x":520,"y":220},{"type":1,"hits":1,"x":520,"y":240},{"type":1,"hits":1,"x":520,"y":260},{"type":1,"hits":1,"x":480,"y":260},{"type":1,"hits":1,"x":480,"y":160}]}];
+
+var levelOne = [{"dimensions":[600,600,40,20,80,20,4,5,7]},{"blocks":[{"type":1,"hits":1,"x":320,"y":500}]}]
 
 var levelTwo = [{"dimensions":[600,600,40,20,80,20,4,5,6]},{"blocks":[{"type":2,"hits":2,"x":0,"y":320},{"type":2,"hits":2,"x":40,"y":320},{"type":2,"hits":2,"x":120,"y":320},{"type":2,"hits":2,"x":80,"y":320},{"type":2,"hits":2,"x":200,"y":320},{"type":2,"hits":2,"x":160,"y":320},{"type":2,"hits":2,"x":280,"y":320},{"type":2,"hits":2,"x":240,"y":320},{"type":2,"hits":2,"x":360,"y":320},{"type":2,"hits":2,"x":320,"y":320},{"type":2,"hits":2,"x":400,"y":320},{"type":2,"hits":2,"x":440,"y":320},{"type":2,"hits":2,"x":480,"y":320},{"type":2,"hits":2,"x":520,"y":320},{"type":2,"hits":2,"x":560,"y":320},{"type":1,"hits":1,"x":0,"y":20},{"type":1,"hits":1,"x":0,"y":100},{"type":1,"hits":1,"x":0,"y":140},{"type":1,"hits":1,"x":0,"y":200},{"type":1,"hits":1,"x":0,"y":260},{"type":1,"hits":1,"x":40,"y":300},{"type":1,"hits":1,"x":0,"y":240},{"type":1,"hits":1,"x":0,"y":280},{"type":1,"hits":1,"x":40,"y":280},{"type":1,"hits":1,"x":40,"y":260},{"type":1,"hits":1,"x":40,"y":220},{"type":1,"hits":1,"x":40,"y":140},{"type":1,"hits":1,"x":40,"y":80},{"type":1,"hits":1,"x":40,"y":40},{"type":1,"hits":1,"x":40,"y":0},{"type":1,"hits":1,"x":0,"y":0},{"type":1,"hits":1,"x":40,"y":20},{"type":1,"hits":1,"x":0,"y":60},{"type":1,"hits":1,"x":0,"y":80},{"type":1,"hits":1,"x":0,"y":40},{"type":1,"hits":1,"x":40,"y":60},{"type":1,"hits":1,"x":0,"y":120},{"type":1,"hits":1,"x":40,"y":120},{"type":1,"hits":1,"x":40,"y":100},{"type":1,"hits":1,"x":0,"y":180},{"type":1,"hits":1,"x":40,"y":160},{"type":1,"hits":1,"x":40,"y":180},{"type":1,"hits":1,"x":0,"y":220},{"type":1,"hits":1,"x":40,"y":200},{"type":1,"hits":1,"x":0,"y":160},{"type":1,"hits":1,"x":40,"y":240},{"type":1,"hits":1,"x":0,"y":300},{"type":1,"hits":1,"x":80,"y":300},{"type":1,"hits":1,"x":80,"y":280},{"type":1,"hits":1,"x":80,"y":240},{"type":1,"hits":1,"x":80,"y":200},{"type":1,"hits":1,"x":80,"y":140},{"type":1,"hits":1,"x":80,"y":100},{"type":1,"hits":1,"x":80,"y":60},{"type":1,"hits":1,"x":80,"y":0},{"type":1,"hits":1,"x":80,"y":40},{"type":1,"hits":1,"x":80,"y":20},{"type":1,"hits":1,"x":80,"y":80},{"type":1,"hits":1,"x":80,"y":120},{"type":1,"hits":1,"x":80,"y":160},{"type":1,"hits":1,"x":80,"y":260},{"type":1,"hits":1,"x":80,"y":220},{"type":1,"hits":1,"x":80,"y":180},{"type":1,"hits":1,"x":120,"y":0},{"type":1,"hits":1,"x":120,"y":40},{"type":1,"hits":1,"x":120,"y":80},{"type":1,"hits":1,"x":120,"y":160},{"type":1,"hits":1,"x":120,"y":200},{"type":1,"hits":1,"x":120,"y":240},{"type":1,"hits":1,"x":120,"y":280},{"type":1,"hits":1,"x":120,"y":300},{"type":1,"hits":1,"x":120,"y":260},{"type":1,"hits":1,"x":120,"y":220},{"type":1,"hits":1,"x":120,"y":180},{"type":1,"hits":1,"x":120,"y":140},{"type":1,"hits":1,"x":120,"y":100},{"type":1,"hits":1,"x":120,"y":120},{"type":1,"hits":1,"x":120,"y":60},{"type":1,"hits":1,"x":120,"y":20},{"type":1,"hits":1,"x":560,"y":300},{"type":1,"hits":1,"x":560,"y":280},{"type":1,"hits":1,"x":560,"y":260},{"type":1,"hits":1,"x":560,"y":240},{"type":1,"hits":1,"x":560,"y":160},{"type":1,"hits":1,"x":560,"y":120},{"type":1,"hits":1,"x":560,"y":60},{"type":1,"hits":1,"x":560,"y":40},{"type":1,"hits":1,"x":560,"y":0},{"type":1,"hits":1,"x":560,"y":20},{"type":1,"hits":1,"x":560,"y":80},{"type":1,"hits":1,"x":560,"y":100},{"type":1,"hits":1,"x":560,"y":140},{"type":1,"hits":1,"x":560,"y":180},{"type":1,"hits":1,"x":560,"y":220},{"type":1,"hits":1,"x":560,"y":200},{"type":1,"hits":1,"x":520,"y":300},{"type":1,"hits":1,"x":480,"y":300},{"type":1,"hits":1,"x":440,"y":300},{"type":1,"hits":1,"x":400,"y":300},{"type":1,"hits":1,"x":320,"y":300},{"type":1,"hits":1,"x":240,"y":300},{"type":1,"hits":1,"x":200,"y":300},{"type":1,"hits":1,"x":160,"y":300},{"type":1,"hits":1,"x":280,"y":300},{"type":1,"hits":1,"x":360,"y":300},{"type":1,"hits":1,"x":520,"y":260},{"type":1,"hits":1,"x":520,"y":240},{"type":1,"hits":1,"x":520,"y":200},{"type":1,"hits":1,"x":520,"y":180},{"type":1,"hits":1,"x":520,"y":140},{"type":1,"hits":1,"x":520,"y":80},{"type":1,"hits":1,"x":520,"y":60},{"type":1,"hits":1,"x":520,"y":20},{"type":1,"hits":1,"x":520,"y":0},{"type":1,"hits":1,"x":520,"y":40},{"type":1,"hits":1,"x":520,"y":100},{"type":1,"hits":1,"x":520,"y":120},{"type":1,"hits":1,"x":520,"y":160},{"type":1,"hits":1,"x":520,"y":220},{"type":1,"hits":1,"x":520,"y":280},{"type":1,"hits":1,"x":480,"y":280},{"type":1,"hits":1,"x":480,"y":240},{"type":1,"hits":1,"x":480,"y":220},{"type":1,"hits":1,"x":480,"y":140},{"type":1,"hits":1,"x":480,"y":120},{"type":1,"hits":1,"x":480,"y":80},{"type":1,"hits":1,"x":480,"y":40},{"type":1,"hits":1,"x":480,"y":0},{"type":1,"hits":1,"x":440,"y":0},{"type":1,"hits":1,"x":360,"y":0},{"type":1,"hits":1,"x":280,"y":0},{"type":1,"hits":1,"x":240,"y":0},{"type":1,"hits":1,"x":160,"y":0},{"type":1,"hits":1,"x":160,"y":20},{"type":1,"hits":1,"x":200,"y":20},{"type":1,"hits":1,"x":200,"y":0},{"type":1,"hits":1,"x":240,"y":20},{"type":1,"hits":1,"x":280,"y":20},{"type":1,"hits":1,"x":320,"y":20},{"type":1,"hits":1,"x":320,"y":0},{"type":1,"hits":1,"x":360,"y":20},{"type":1,"hits":1,"x":400,"y":20},{"type":1,"hits":1,"x":400,"y":0},{"type":1,"hits":1,"x":480,"y":20},{"type":1,"hits":1,"x":440,"y":20},{"type":1,"hits":1,"x":480,"y":60},{"type":1,"hits":1,"x":480,"y":100},{"type":1,"hits":1,"x":480,"y":160},{"type":1,"hits":1,"x":480,"y":180},{"type":1,"hits":1,"x":480,"y":200},{"type":1,"hits":1,"x":480,"y":260},{"type":1,"hits":1,"x":440,"y":80},{"type":1,"hits":1,"x":440,"y":40},{"type":1,"hits":1,"x":400,"y":40},{"type":1,"hits":1,"x":360,"y":40},{"type":1,"hits":1,"x":320,"y":40},{"type":1,"hits":1,"x":280,"y":40},{"type":1,"hits":1,"x":240,"y":40},{"type":1,"hits":1,"x":200,"y":40},{"type":1,"hits":1,"x":160,"y":60},{"type":1,"hits":1,"x":160,"y":40},{"type":1,"hits":1,"x":200,"y":60},{"type":1,"hits":1,"x":240,"y":60},{"type":1,"hits":1,"x":280,"y":60},{"type":1,"hits":1,"x":320,"y":60},{"type":1,"hits":1,"x":360,"y":60},{"type":1,"hits":1,"x":400,"y":60},{"type":1,"hits":1,"x":440,"y":60},{"type":1,"hits":1,"x":400,"y":80},{"type":1,"hits":1,"x":360,"y":80},{"type":1,"hits":1,"x":320,"y":80},{"type":1,"hits":1,"x":280,"y":80},{"type":1,"hits":1,"x":240,"y":80},{"type":1,"hits":1,"x":200,"y":80},{"type":1,"hits":1,"x":160,"y":80},{"type":1,"hits":1,"x":160,"y":100},{"type":1,"hits":1,"x":200,"y":140},{"type":1,"hits":1,"x":160,"y":160},{"type":1,"hits":1,"x":160,"y":220},{"type":1,"hits":1,"x":160,"y":240},{"type":1,"hits":1,"x":200,"y":260},{"type":1,"hits":1,"x":200,"y":280},{"type":1,"hits":1,"x":240,"y":240},{"type":1,"hits":1,"x":240,"y":220},{"type":1,"hits":1,"x":200,"y":160},{"type":1,"hits":1,"x":200,"y":120},{"type":1,"hits":1,"x":160,"y":120},{"type":1,"hits":1,"x":160,"y":140},{"type":1,"hits":1,"x":200,"y":100},{"type":1,"hits":1,"x":200,"y":180},{"type":1,"hits":1,"x":200,"y":220},{"type":1,"hits":1,"x":200,"y":240},{"type":1,"hits":1,"x":160,"y":180},{"type":1,"hits":1,"x":160,"y":200},{"type":1,"hits":1,"x":200,"y":200},{"type":1,"hits":1,"x":160,"y":280},{"type":1,"hits":1,"x":160,"y":260},{"type":1,"hits":1,"x":240,"y":280},{"type":1,"hits":1,"x":240,"y":260},{"type":1,"hits":1,"x":240,"y":200},{"type":1,"hits":1,"x":240,"y":120},{"type":1,"hits":1,"x":240,"y":140},{"type":1,"hits":1,"x":240,"y":180},{"type":1,"hits":1,"x":240,"y":160},{"type":1,"hits":1,"x":240,"y":100},{"type":1,"hits":1,"x":280,"y":100},{"type":1,"hits":1,"x":360,"y":100},{"type":1,"hits":1,"x":400,"y":100},{"type":1,"hits":1,"x":440,"y":100},{"type":1,"hits":1,"x":440,"y":120},{"type":1,"hits":1,"x":440,"y":160},{"type":1,"hits":1,"x":440,"y":200},{"type":1,"hits":1,"x":440,"y":240},{"type":1,"hits":1,"x":440,"y":260},{"type":1,"hits":1,"x":440,"y":220},{"type":1,"hits":1,"x":440,"y":180},{"type":1,"hits":1,"x":440,"y":140},{"type":1,"hits":1,"x":440,"y":280},{"type":1,"hits":1,"x":400,"y":280},{"type":1,"hits":1,"x":360,"y":280},{"type":1,"hits":1,"x":320,"y":280},{"type":1,"hits":1,"x":280,"y":280},{"type":1,"hits":1,"x":280,"y":240},{"type":1,"hits":1,"x":280,"y":220},{"type":1,"hits":1,"x":280,"y":200},{"type":1,"hits":1,"x":280,"y":180},{"type":1,"hits":1,"x":280,"y":160},{"type":1,"hits":1,"x":280,"y":140},{"type":1,"hits":1,"x":280,"y":120},{"type":1,"hits":1,"x":320,"y":100},{"type":1,"hits":1,"x":320,"y":120},{"type":1,"hits":1,"x":320,"y":140},{"type":1,"hits":1,"x":320,"y":160},{"type":1,"hits":1,"x":320,"y":200},{"type":1,"hits":1,"x":320,"y":220},{"type":1,"hits":1,"x":320,"y":260},{"type":1,"hits":1,"x":280,"y":260},{"type":1,"hits":1,"x":320,"y":240},{"type":1,"hits":1,"x":320,"y":180},{"type":1,"hits":1,"x":360,"y":120},{"type":1,"hits":1,"x":400,"y":120},{"type":1,"hits":1,"x":400,"y":140},{"type":1,"hits":1,"x":400,"y":160},{"type":1,"hits":1,"x":400,"y":200},{"type":1,"hits":1,"x":400,"y":220},{"type":1,"hits":1,"x":400,"y":240},{"type":1,"hits":1,"x":360,"y":260},{"type":1,"hits":1,"x":360,"y":240},{"type":1,"hits":1,"x":360,"y":220},{"type":1,"hits":1,"x":360,"y":200},{"type":1,"hits":1,"x":360,"y":180},{"type":1,"hits":1,"x":360,"y":160},{"type":1,"hits":1,"x":360,"y":140},{"type":1,"hits":1,"x":400,"y":180},{"type":1,"hits":1,"x":400,"y":260},{"type":2,"hits":2,"x":0,"y":340},{"type":2,"hits":2,"x":80,"y":340},{"type":2,"hits":2,"x":120,"y":340},{"type":2,"hits":2,"x":40,"y":340},{"type":2,"hits":2,"x":160,"y":340},{"type":2,"hits":2,"x":200,"y":340},{"type":2,"hits":2,"x":240,"y":340},{"type":2,"hits":2,"x":280,"y":340},{"type":2,"hits":2,"x":320,"y":340},{"type":2,"hits":2,"x":360,"y":340},{"type":2,"hits":2,"x":400,"y":340},{"type":2,"hits":2,"x":440,"y":340},{"type":2,"hits":2,"x":480,"y":340},{"type":2,"hits":2,"x":560,"y":340},{"type":2,"hits":2,"x":520,"y":340}]}];
 
@@ -213,8 +215,9 @@ function move()
 		if(blocks.length == 0)
 		{
 			shouldLoadLevel = true;
-			++levelIterator;
+			//++levelIterator;
 			launched = false;
+			upload();
 		}
 
 		if(hCollisionCircleRectangle(ball.x, ball.y, ballRad, paddle.x, paddle.y, levelDimensions[4], levelDimensions[5]))
@@ -232,11 +235,6 @@ function move()
 	}
 }
 
-function loadLevel(level)
-{
-
-}
-
 function main()
 {
 	render();
@@ -245,40 +243,7 @@ function main()
 	//	Pull information from the level array
 	if(shouldLoadLevel)
 	{
-		var level = levels[levelIterator];
-		console.log(level);
-
-		//	Level dimensions
-		levelDimensions.push(600);
-		levelDimensions.push(600);
-		levelDimensions.push(level[0]["dimensions"][2]);
-		levelDimensions.push(level[0]["dimensions"][3]);
-		levelDimensions.push(level[0]["dimensions"][4]);
-		levelDimensions.push(level[0]["dimensions"][5]);
-		levelDimensions.push(level[0]["dimensions"][6]);
-		levelDimensions.push(level[0]["dimensions"][7]);
-		levelDimensions.push(level[0]["dimensions"][8]);
-
-		//	Now pull the blocks from the level data as well
-		for(var i = 0; i < levels[levelIterator][1].blocks.length; ++i)
-		{
-			console.log("Loading the blocks");
-			var block = {};
-			block.type = levels[levelIterator][1].blocks[i].type;
-			block.hits = levels[levelIterator][1].blocks[i].hits;
-			block.x = levels[levelIterator][1].blocks[i].x;
-			block.y = levels[levelIterator][1].blocks[i].y;
-
-			blocks.push(block);
-		}
-
-		//	Set up objects to move around
-		paddle.x = ((levelDimensions[0] / 2) - (levelDimensions[4] / 2));
-		paddle.y = levelDimensions[1] - (levelDimensions[5]);
-		ball.x = (levelDimensions[0] / 2);
-		ball.y = levelDimensions[1] - ballRad - levelDimensions[5] - 1;
-
-		shouldLoadLevel = false;
+		loadLevel();
 	}
 }
 
@@ -361,8 +326,88 @@ function blockTypeOne(x, y)
 	return block;
 }
 
+function loadLevel()
+{
+	var level = levels[levelIterator];
+	console.log(level);
+
+	//	Level dimensions
+	levelDimensions.push(600);
+	levelDimensions.push(600);
+	levelDimensions.push(level[0]["dimensions"][2]);
+	levelDimensions.push(level[0]["dimensions"][3]);
+	levelDimensions.push(level[0]["dimensions"][4]);
+	levelDimensions.push(level[0]["dimensions"][5]);
+	levelDimensions.push(level[0]["dimensions"][6]);
+	levelDimensions.push(level[0]["dimensions"][7]);
+	levelDimensions.push(level[0]["dimensions"][8]);
+
+	//	Now pull the blocks from the level data as well
+	for(var i = 0; i < levels[levelIterator][1].blocks.length; ++i)
+	{
+		console.log("Loading the blocks");
+		var block = {};
+		block.type = levels[levelIterator][1].blocks[i].type;
+		block.hits = levels[levelIterator][1].blocks[i].hits;
+		block.x = levels[levelIterator][1].blocks[i].x;
+		block.y = levels[levelIterator][1].blocks[i].y;
+
+		blocks.push(block);
+	}
+
+	//	Set up objects to move around
+	paddle.x = ((levelDimensions[0] / 2) - (levelDimensions[4] / 2));
+	paddle.y = levelDimensions[1] - (levelDimensions[5]);
+	ball.x = (levelDimensions[0] / 2);
+	ball.y = levelDimensions[1] - ballRad - levelDimensions[5] - 1;
+
+	shouldLoadLevel = false;
+	++levelIterator;
+}
+
+function upload()
+{
+	var file = this.files[0];
+
+	levelName = file.name.substring(0, file.name.length - 4);
+	$("#main\\.top\\.name").val(levelName);
+
+	var reader = new FileReader();
+		reader.onload = function(progressEvent){
+
+		var info = JSON.parse(this.result);
+		console.log(info[1]);
+
+		var newDimensions = info[0].dimensions;
+
+		for(var i = 0; i < newDimensions.length; ++i)
+		{
+			levelDimensions[i] = newDimensions[i];
+		}
+
+		console.log(info[1]["blocks"].length);
+		blocks = [];
+		for(var i = 0; i < info[1]["blocks"].length; ++i)
+		{
+			console.log("jgfdjksg");
+			var block = {};
+			block.type = info[1]["blocks"][i].type;
+			block.hits = info[1]["blocks"][i].hits;
+			block.x = info[1]["blocks"][i].x;
+			block.y = info[1]["blocks"][i].y;
+
+			blocks.push(block);
+		}
+	};
+
+	reader.readAsText(file);
+}
+
 window.onload = function(){
 	console.log("Javascript file loaded correctly");
+
+	$("#main\\.focus\\.upload").change(upload);
+
 	fillScreen("#ffffff");
 	context = document.getElementById("main.focus.canvas").getContext("2d");
 
