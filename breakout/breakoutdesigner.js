@@ -493,6 +493,7 @@ function upload(evt)
 			block.y = info[1]["blocks"][i].y;
 
 			blocks.push(block);
+			createPanelElement(block);
 		}
 	};
 
