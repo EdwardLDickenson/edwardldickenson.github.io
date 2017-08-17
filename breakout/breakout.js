@@ -330,6 +330,7 @@ function loadLevel()
 	console.log(level);
 
 	//	Level dimensions
+	//	Use levelOne[0]["dimensions"] instead of literals
 	levelDimensions.push(600);
 	levelDimensions.push(600);
 	levelDimensions.push(level[0]["dimensions"][2]);
@@ -343,7 +344,6 @@ function loadLevel()
 	//	Now pull the blocks from the level data as well
 	for(var i = 0; i < levels[levelIterator][1].blocks.length; ++i)
 	{
-		console.log("Loading the blocks");
 		var block = {};
 		block.type = levels[levelIterator][1].blocks[i].type;
 		block.hits = levels[levelIterator][1].blocks[i].hits;
@@ -401,10 +401,45 @@ function upload()
 	reader.readAsText(file);
 }
 
+//	This shares sginificantly with loadLevel
+function reset()
+{
+	var level = levelOne;
+	levelDimensions.push(levelOne[0]["dimensions"][0]);
+	levelDimensions.push(levelOne[0]["dimensions"][1]);
+	levelDimensions.push(levelOne[0]["dimensions"][2]);
+	levelDimensions.push(levelOne[0]["dimensions"][3]);
+	levelDimensions.push(levelOne[0]["dimensions"][4]);
+	levelDimensions.push(levelOne[0]["dimensions"][5]);
+	levelDimensions.push(levelOne[0]["dimensions"][6]);
+	levelDimensions.push(levelOne[0]["dimensions"][7]);
+	levelDimensions.push(levelOne[0]["dimensions"][8]);
+
+	for(var i = 0; i < levelOne[1]["blocks"].length; ++i)
+	{
+		var block = {};
+		block.type = levelOne[1]["blocks"][i].type;
+		block.hits = levelOne[1]["blocks"][i].hits;
+		block.x = levelOne[1]["blocks"][i].x
+		block.y = levelOne[1]["blocks"][i].y
+
+		blocks.push(block);
+	}
+
+	paddle.x = ((levelDimensions[0] / 2) - (levelDimensions[4] / 2));
+	paddle.y = levelDimensions[1] - (levelDimensions[5]);
+	ball.x = (levelDimensions[0] / 2);
+	ball.y = levelDimensions[1] - ballRad - levelDimensions[5] - 1;
+
+	shouldLoadLevel = false;
+	launched = false;
+}
+
 window.onload = function(){
 	console.log("Javascript file loaded correctly");
 
 	$("#main\\.focus\\.upload").change(upload);
+	$("#main\\.focus\\.restart").click(reset);
 
 	fillScreen("#ffffff");
 	context = document.getElementById("main.focus.canvas").getContext("2d");
