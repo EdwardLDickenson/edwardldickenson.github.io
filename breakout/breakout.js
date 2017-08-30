@@ -13,18 +13,20 @@ var ballRad = 8;
 var launched = false;
 var paused = false;
 var updateFreq = 50;
+var score = 0;
 
 var levelDimensions = [];
+
 //	The fields are as follows:
-//	canvasWidth
-//	camvasHeight
-//	blockWidth
-//	blockHeight
-//	paddleWidth
-//	paddleHeight
-//	paddleSpeed
-//	ballXV
-//	ballYV
+//	canvasWidth 0
+//	camvasHeight 1
+//	blockWidth 2
+//	blockHeight 3
+//	paddleWidth 4
+//	paddleHeight 5
+//	paddleSpeed 6
+//	ballXV 7
+//	ballYV 8
 var blocks = [];
 var levelName = "";
 
@@ -37,7 +39,30 @@ var ball = {"xv": 0, "yv": 0};
 var shouldLoadLevel = true;
 var context;
 
+var primaryColorPresets = ["#FF0000", "#00FF00", "#0000FF"];
+var secondaryColorPresets = ["#880000", "#008800", "#000088"];
+
 document.onkeydown = kvent;
+
+//	Strictly speaking, this is a "block" class, not a rectangle class.  But this will be addressed in the future.
+var Rectangle = class{
+	constructor(x, y, width, height, type, hits){
+		this.x = x;
+		this.y = y;
+		this.height = height;
+		this.width = width;
+		this.type = type;
+		this.hits = hits;
+	}
+
+	render(str){
+		context.beginPath();
+		context.rect(this.x, this.y, this.width, this.height);
+		context.fillStyle = str;
+		context.fill();
+		context.closePath();
+	}
+}
 
 function renderRect(x, y, width, height, str)
 {
@@ -46,27 +71,6 @@ function renderRect(x, y, width, height, str)
 	context.fillStyle = str;
 	context.fill();
 	context.closePath();
-}
-
-function renderType(x, y, n)
-{
-	if(n == 1)
-	{
-		renderRect(x, y, levelDimensions[2], levelDimensions[3], "#FF0000");
-		renderRect(x + 4, y + 4, levelDimensions[2] - 8, levelDimensions[3] - 8, "#880000");
-	}
-
-	if(n == 2)
-	{
-		renderRect(x, y, levelDimensions[2], levelDimensions[3], "#00FF00");
-		renderRect(x + 4, y + 4, levelDimensions[2] - 8, levelDimensions[3] - 8, "#008800");
-	}
-
-	if(n == 3)
-	{
-		renderRect(x, y, levelDimensions[2], levelDimensions[3], "#0000FF");
-		renderRect(x + 4, y + 4, levelDimensions[2] - 8, levelDimensions[3] - 8, "#000088");
-	}
 }
 
 function renderCircle(x, y, rad, color, border)
@@ -86,15 +90,20 @@ function render()
 {
 	fillScreen("#FFFFFF");
 
-	renderRect(paddle.x, paddle.y, levelDimensions[4], levelDimensions[5], "#0000FF");
-	renderRect(paddle.x + (levelDimensions[4] / 6), paddle.y + (levelDimensions[5] / 4), levelDimensions[4] - (levelDimensions[4] / 3), levelDimensions[5] - (levelDimensions[5] / 2), "#000066");
+	var rect = new Rectangle(paddle.x, paddle.y, levelDimensions[4], levelDimensions[5]);
+	var innerRect = new Rectangle(paddle.x + (levelDimensions[4] / 6), paddle.y + (levelDimensions[5] / 4), levelDimensions[4] - (levelDimensions[4] / 3), levelDimensions[5] - (levelDimensions[5] / 2))
+	rect.render("#0000FF")
+	innerRect.render("#000066");
 
 	renderCircle(ball.x, ball.y, ballRad, "#FFFF00", true);
 	renderCircle(ball.x, ball.y, ballRad * .75, "#CCCC00", false);
 
 	for(var i = 0; i < blocks.length; ++i)
 	{
-		renderType(blocks[i].x, blocks[i].y, blocks[i].type);
+		blocks[i].render("#FF0000")
+
+		var innerRect = new Rectangle(blocks[i].x + 4, blocks[i].y + 4, blocks[i].width - 8, blocks[i].height - 8);
+		innerRect.render("#880000");
 	}
 }
 
@@ -327,7 +336,6 @@ function blockTypeOne(x, y)
 function loadLevel()
 {
 	var level = levels[levelIterator];
-	console.log(level);
 
 	//	Level dimensions
 	//	Use levelOne[0]["dimensions"] instead of literals
@@ -344,13 +352,8 @@ function loadLevel()
 	//	Now pull the blocks from the level data as well
 	for(var i = 0; i < levels[levelIterator][1].blocks.length; ++i)
 	{
-		var block = {};
-		block.type = levels[levelIterator][1].blocks[i].type;
-		block.hits = levels[levelIterator][1].blocks[i].hits;
-		block.x = levels[levelIterator][1].blocks[i].x;
-		block.y = levels[levelIterator][1].blocks[i].y;
-
-		blocks.push(block);
+		var block = new Rectangle(levels[levelIterator][1].blocks[i].x, levels[levelIterator][1].blocks[i].y, levelDimensions[2], levelDimensions[3], levels[levelIterator][1].blocks[i].type, levels[levelIterator][1].blocks[i].type);
+		blocks.push(block)
 	}
 
 	//	Set up objects to move around
@@ -374,7 +377,6 @@ function upload()
 		reader.onload = function(progressEvent){
 
 		var info = JSON.parse(this.result);
-		console.log(info[1]);
 
 		var newDimensions = info[0].dimensions;
 
@@ -383,11 +385,9 @@ function upload()
 			levelDimensions[i] = newDimensions[i];
 		}
 
-		console.log(info[1]["blocks"].length);
 		blocks = [];
 		for(var i = 0; i < info[1]["blocks"].length; ++i)
 		{
-			console.log("jgfdjksg");
 			var block = {};
 			block.type = info[1]["blocks"][i].type;
 			block.hits = info[1]["blocks"][i].hits;
