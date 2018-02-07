@@ -1,0 +1,64 @@
+/*
+  Edward Lloyd Dickenson
+  eld@uwm.edu
+  Computer Science: 482
+  Rich Internet Applications
+  Final Project
+*/
+
+/*Excluding h1*/
+h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+select{
+  background-color: black;
+  color: white;
+  border: 1px solid #666666;
+  /*Non-standard*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input{
+  background-color: #666666;
+  color: white;
+  border: 0px;
+}
+
+/*Vendor sepecific*/
+::-webkit-input-placeholder{
+  color: white;
+}
+
+:-moz-placeholder{
+  color: white;
+}
+
+:-ms-input-placeholder{
+  color: white;
+}
+
+/*Unfortunately, css does not regard a period as a legal character for id's even though it's standard HTML*/
+#main\.canvas{
+  border: 1px solid #666666;
+}
+
+/*input[type="file"]{
+  background-color: black;
+  height: 0px;
+  width: 0px;
+  display: block;
+}*/
+
+/*#main\.menu\.file\.upload\.image{
+  background-color:black;
+}*/
